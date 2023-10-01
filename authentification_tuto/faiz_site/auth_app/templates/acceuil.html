@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container home">
+        <h2>Bienvenue, {{ user.username }}!</h2>
+        <button><a href="{% url 'deconnexion' %}">Déconnexion</a></button>
+    </div>
+    <style>
+        /* CSS */
+        /* Import Google font - Poppins */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h2 {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            background: #009579;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 400px;
+            background: #fff;
+            border-radius: 7px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+
+
+        a {
+            color: #fff;
+            text-decoration: 0;
+        }
+
+        button {
+            color: #fff;
+            background: #009579;
+            width: 100%;
+            padding: 10px;
+            font-size: 17px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        button:hover {
+            background: #006653;
+        }
+    </style>
+</body>
+</html>
